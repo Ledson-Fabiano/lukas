@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria: Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/pilha-de-livros (1).png">
+</head>
+<body class="dark">
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="img/pilha-de-livros (1).png" alt="logo">
+        </a>
+        <ul class="nav-links nav-links-desktop">
+            <li class="nav-item"><a class="nav-link active" href="Inicio.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Livros.html">Livros</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Contatos.html">Contatos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Eventos.html">Eventos</a></li>
+        </ul>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()" aria-label="Abrir menu">
+                <img class="icon" src="img/menu_white_36dp.svg" alt="Ícone do menu">
+            </button>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search..." oninput="search()" />
+            <ul id="results-list"></ul>
+        </div>
+        <div class="mobile-menu">
+        <ul class="nav-links nav-links-desktop">
+            <li class="nav-item"><a class="nav-link active" href="Inicio.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Livros.html">Livros</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Contatos.html">Contatos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Eventos.html">Eventos</a></li>
+        </ul>
+    </div>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>Livraria </h1>
+            <p>Confira nossos eventos e promoções especiais!</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tablinks active" onclick="openTab(event, 'Eventos')">Eventos</button>
+            <button class="tablinks" onclick="openTab(event, 'Promocoes')">Promoções</button>
+            <button class="tablinks" onclick="openTab(event, 'Lancamentos')">Lançamentos</button>
+        </div>
+
+        <div id="Eventos" class="tabcontent">
+            <h2>Próximos Eventos</h2>
+            <p>Participe de nossos eventos literários, lançamentos e muito mais!</p>
+            <ul>
+                <li><strong>Autógrafo com autor X</strong> - 25 de novembro, 15h</li>
+                <li><strong>Encontro de Leitores</strong> - 30 de novembro, 18h</li>
+                <li><strong>Palestra sobre literatura infantil</strong> - 5 de dezembro, 19h</li>
+            </ul>
+        </div>
+
+        <div id="Promocoes" class="tabcontent">
+            <h2>Promoções Imperdíveis</h2>
+            <p>Aproveite as ofertas especiais de nossa livraria:</p>
+            <ul>
+                <li><strong>Desconto de 30% em bestsellers</strong> - até 30 de novembro</li>
+                <li><strong>Compre 1, leve 2 em livros infantis</strong> - até 5 de dezembro</li>
+                <li><strong>Promoção de Natal - 15% em todos os livros</strong> - até 24 de dezembro</li>
+            </ul>
+        </div>
+
+        <div id="Lancamentos" class="tabcontent">
+            <h2>Novos Lançamentos</h2>
+            <p>Veja os lançamentos de livros mais aguardados:</p>
+            <ul>
+                <li><strong>O Livro do Ano</strong> - Lançamento em 20 de novembro</li>
+                <li><strong>Segredos do Passado</strong> - Lançamento em 10 de dezembro</li>
+                <li><strong>A Jornada do Herói</strong> - Lançamento em 15 de janeiro</li>
+            </ul>
+        </div>
+    </div>
+<br>
+
+    <script src="script.js"></script>
+
+    <main class="flex-fill"></main>
+                <footer class="border-top  text-muted bg-light">
+                    <div class="container">
+                        <div class="row py-3">
+                            <div class="col-12 col-md-4 text-center">
+                                ©, 2024 - Biblioteca Online LTDA ME
+                                <br>
+                                RUA Virtual Inexistente,198, COMPUTADOR/PC
+                                <br>
+                                CNPJ 00.000.000/0000-00
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+</body>
+</html>
